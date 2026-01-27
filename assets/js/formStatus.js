@@ -40,7 +40,12 @@ form.addEventListener("submit", async e => {
             }, 2000);
             form.reset()
         }else {
+            let textoBtn = btnEnviar.textContent 
+
             btnEnviar.textContent = "Error al enviar el mensaje."
+            setTimeout(() => {
+                btnEnviar.textContent = textoBtn;
+            },2000)
         }
     } catch {
         btnEnviar.textContent = "Sin conexión. Intenta otra vez"
