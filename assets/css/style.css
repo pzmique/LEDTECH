@@ -316,7 +316,6 @@ p {
     background: #fff;
     border-radius: 10px 10px 50px 50px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.433);
-    font-family: Arial, sans-serif;
 }
 
 .sectionForm label {
@@ -550,10 +549,11 @@ p {
 /* Seccion FOOTER */
 
 footer {
-    padding: 50px 100px 50px 100px;
     color: rgb(255, 255, 255);
-    margin-top: 100px;
     background-color: rgb(25, 25, 25);
+
+    padding: 50px;
+    margin-top: 100px;
 }
 .font-regular {
     font-family: 'Poppins-regular';
