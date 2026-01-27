@@ -1,0 +1,561 @@
+@import url(/assets/css/root.css);
+
+header {
+    z-index: 1000;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    display: grid;
+    place-items: center;
+    background-color: rgba(255, 255, 255, 0.836);
+
+    box-shadow: 0 0 10px 5px rgba(5, 5, 5, 0.11);
+    border-bottom: rgba(122, 122, 122, 0.219) 1px solid;
+
+    backdrop-filter: blur(5px);
+}
+
+.header {
+    width: 85%;
+    height: 100px;
+
+    display: flex;
+    position: fixed;
+    align-items: center;
+    padding: 10px 30px 10px 30px;
+
+    top: 0;
+}
+
+.header nav {
+    display: flex;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.title {
+    color: #5961ad;
+    margin: 0;
+    font-weight: 450;
+}
+
+.titleBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.subtitle {
+    display: block;
+    font-size: 0.9rem;
+    color: rgb(94, 94, 94);
+}
+
+li,
+a {
+    border-radius: 10px;
+    transition: all 200ms ease !important;
+}
+
+li a:hover {
+    transform: scale(1.1) !important;
+    color: #5c69dd !important;
+
+    box-shadow: 0 0 10px 2px rgba(5, 5, 5, 0.43);
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+/* Especificamente para el navegador principal.*/
+.nav-align {
+    display: flex;
+    align-items: center;
+}
+
+/* ... */
+.long-img {
+    width: 5vw;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.icon-page {
+    width: 40px;
+    height: 40px;
+}
+
+/* header móvil */
+
+@media (max-width: 800px) {
+
+    header,
+    .header {
+        max-height: 100px auto;
+    }
+
+    .titleBox {
+        align-items: center;
+    }
+
+    .subtitle {
+        display: none;
+    }
+
+
+    /*Menu ... */
+    .menu {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 50px;
+        background-color: rgb(250, 250, 250);
+        box-shadow: 0 0 10px 5px rgba(5, 5, 5, 0.555);
+
+        border-radius: 10px;
+
+        padding: 10px;
+    }
+
+    .menu.open {
+        display: flex;
+    }
+    /* ... */
+
+    .sectionAboutUs {
+        padding: 50px !important;
+    }
+
+
+    /*Section bulllets */
+    .sectionBullets {
+        flex-direction: column;
+        align-items: center;
+    }
+    /* ... */
+}
+
+/*main sección.... */
+main {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+    text-align: center;
+
+    padding: 10px 0 0 0;
+
+}
+
+
+/* Section About */
+.textMain {
+    font-weight: 400;
+}
+
+.sectionAbout {
+    width: 100%;
+    padding: 100px 50px 100px 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+    overflow: hidden;
+
+    color: white;
+
+    background: url(/assets/media/images/marcasdetelevisores.png) no-repeat center center;
+    background-size: cover;
+}
+
+.sectionAbout::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.808);
+}
+
+.sectionAboutContent {
+    position: relative;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.row-x {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/* seccion divisoria */
+.sectionDiagonal {
+    display: flex;
+    justify-content: center;
+
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    background-color: rgb(240, 240, 240);
+
+    padding: 100px 50px 100px 50px;
+    border-radius: 0 0 10px 10px;
+
+}
+
+/* ... */
+
+.sectionRepair {
+    display: flex;
+    justify-content: center;
+
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+}
+
+p {
+    margin: 0;
+}
+
+/* SECTION ABOUT US */
+.sectionAboutUs {
+    margin: 50px 0 0px 0;
+    padding: 100px;
+
+    text-align: center;
+    overflow: hidden;
+    background: url(/assets/media/images/tv-repair.jpg) no-repeat center center;
+    background-size: cover;
+
+    position: relative;
+
+    color: white;
+
+    border-radius: 50px 50px 0 0;
+}
+
+.sectionAboutUs::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.788);
+}
+
+.sectionAboutUs .container {
+    position: relative;
+}
+
+/*Section bullets */
+.sectionBulletsMain {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.sectionBullets {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionBullets .col-9 {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    text-align: center;
+}
+
+/*... */
+/* Button whatsapp */
+
+.btn-wsp {
+    position: fixed;
+    width: 7vw;
+
+    bottom: 50px;
+    right: 20px;
+
+    box-shadow: 0 2px 8px rgba(3, 3, 3, 0.274);
+    border-radius: 100px;
+
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    transition: all .2s ease-in-out;
+}
+
+.btn-wsp:hover {
+    transform: scale(1.2);
+    rotate: 10deg;
+}
+
+/*... */
+/* Formulario Seccion */
+
+.sectionForm {
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px 10px 50px 50px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.433);
+    font-family: Arial, sans-serif;
+}
+
+.sectionForm label {
+    display: block;
+    margin-left: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.sectionForm input,
+.sectionForm textarea {
+
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.sectionForm button {
+    width: 50%;
+    padding: 12px;
+    background: #1d2c4b5e;
+
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: all ease 200ms;
+}
+
+.sectionForm button:hover {
+    background: #304a74;
+    box-shadow: 0 0 5px 2px rgba(5, 5, 5, 0.43);
+
+    transform: scale(1.2);
+    width: 25%;
+}
+
+.sectionFormMain {
+    padding: 50px;
+    border-radius: 10px 10px 50px 50px;
+    background-color: black;
+
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+    background-color: rgb(240, 240, 240);
+
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+}
+
+    /*Resultado del formulario mostrado en el boton */
+    .btn {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .spinner,
+    .check {
+        display: none;
+        position: absolute;
+        inset: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .spinner::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        border: 3px solid #ccc;
+        border-top-color: #000;
+        border-radius: 50%;
+
+        animation: spin 1s linear infinite;
+    }
+
+    .btn.loading .text {
+        visibility: hidden;
+    }
+    .btn.loading .spinner {
+        display: flex;
+    }
+    .btn.success .spinner {
+        display: none;
+    }
+    .btn.success .text {
+        visibility: hidden;
+    } 
+    .btn.success .check {
+        display: flex;
+        animation: success 1s ease-in-out forwards;
+    }
+
+    @keyframes spin {
+        to{
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes success {
+        to {
+            background-color: green;
+        }
+    }
+    /* .. */
+
+/*... */
+/*toast notification seccion */
+.toast-main {
+    z-index: 10;
+    position: fixed;
+    overflow: hidden;
+    top: 120px;
+    left: 20px;
+    max-width: 40vw;
+    border-radius: 20px;
+
+    display: none;
+    gap: 10px;
+    flex-direction: row;
+
+    background-color: rgb(36, 145, 3);
+}
+
+.toast-main.apertura {
+    display: flex;
+    animation: apertura-toast 2s ease-out forwards;
+}
+
+.container-toast {
+    display: flex;
+    justify-content: center;
+
+    color: rgb(248, 248, 248);
+}
+
+
+.container-toast .toast-content {
+    display: grid;
+    grid-template-columns: 30px auto;
+
+    align-items: center;
+    text-align: left;
+
+    gap: 10px;
+    padding: 10px 10px;
+}
+
+.container-toast .btn-cerrar {
+    padding: 10px 10px;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+
+    transition: background-color 200ms ease;
+}
+
+.btn-cerrar:hover {
+    background-color: rgb(1, 102, 1);
+}
+
+.toast-title {
+    font-size: 20px;
+}
+
+.toast-subtitle {
+    font-family: 'Poppins-regular';
+    font-size: 14px;
+}
+
+/*Toast animacion de apertura/cierre */
+@keyframes apertura-toast {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes cierre-toast {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes auto-cierre {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0%;
+    }
+}
+
+
+/* .. */
+
+.cierre-toast {
+    animation: cierre-toast 2s ease forwards;
+}
+
+.toast-main::after {
+    content: "";
+    width: 100%;
+    height: 5px;
+
+    background-color: rgba(0, 0, 0, 0.507);
+
+    position: absolute;
+    bottom: 0;
+
+    animation: auto-cierre 5s ease-out forwards;
+}
+/* ... */
+
+/* Seccion FOOTER */
+
+footer {
+    padding: 50px 100px 50px 100px;
+    color: rgb(255, 255, 255);
+    margin-top: 100px;
+    background-color: rgb(25, 25, 25);
+}
+.font-regular {
+    font-family: 'Poppins-regular';
+}
+/*... */
