@@ -289,7 +289,7 @@ p {
 
 .btn-wsp {
     position: fixed;
-    width: 7vw;
+    width: 100px;
 
     bottom: 50px;
     right: 20px;
