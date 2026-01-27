@@ -1,4 +1,4 @@
-@import url(/assets/css/root.css);
+@import url(../css/root.css);
 
 header {
     z-index: 1000;
@@ -177,7 +177,7 @@ main {
 
     color: white;
 
-    background: url(/assets/media/images/marcasdetelevisores.png) no-repeat center center;
+    background: url(../media/images/marcasdetelevisores.png) no-repeat center center;
     background-size: cover;
 }
 
@@ -238,7 +238,7 @@ p {
 
     text-align: center;
     overflow: hidden;
-    background: url(/assets/media/images/tv-repair.jpg) no-repeat center center;
+    background: url(../media/images/tv-repair.jpg) no-repeat center center;
     background-size: cover;
 
     position: relative;
