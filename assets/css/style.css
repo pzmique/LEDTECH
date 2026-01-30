@@ -103,6 +103,7 @@ a {
     header,
     .header {
         max-height: 100px auto;
+        padding: 0;
     }
 
     .titleBox {
@@ -559,3 +560,15 @@ footer {
     font-family: 'Poppins-regular';
 }
 /*... */
+
+/*Animacion de la página al bajar */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 600ms ease-out, transform 600ms ease-out;
+}
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* ... */
