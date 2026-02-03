@@ -66,6 +66,8 @@ li,
 a {
     border-radius: 10px;
     transition: all 200ms ease !important;
+    cursor: pointer;
+    user-select: none;
 }
 
 li a:hover {
@@ -587,4 +589,4 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
-/*...*/
+/* ... */
