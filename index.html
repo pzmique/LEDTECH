@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>LedTech | Reparación de TV y Servicio Técnico</title>
+    <title>LedTech | Servicio Técnico en Reparaciones de TV</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="LEDTECH - Reparación de televisored LED, electrónica y tecnología. Servicio técnico en Lanús, Zona Sur">
+    <meta name="description" content="LEDTECH - Reparación de televisored LED, electrónica y tecnología. Servicio técnico en Lanús, Zona Sur, Smart TV, TV roto, Reparación de Smart TV.">
     <meta name="keywords" content="reparación de televisores, servicio técnico, electrónica, LED, Smart TV">
     <meta name="author" content="LEDTECH - Paz Miqueas">
     <meta name="publisher" content="LEDTECH - Paz Miqueas">
@@ -31,7 +31,7 @@
                                 alt="'tvimage icon'">
                         </div>
                         <span class="subtitle">Ledtech | Lanús | Servicio técnico especializado en TV</span>
-                        <span class="subtitle-mobile"> Servicio técnico de Televisores</span>
+                        <span class="subtitle-mobile"> Servicio técnico de TV</span>
                     </a>
 
                     <button class="navbar-toggler" type="button" id="btn-menu">
@@ -39,14 +39,14 @@
                     </button>
 
                     <ul class="navbar-nav menu" id="drop-down-menu">
-                        <li class="nav-item">
-                            <a class="nav-link nav-align gap-2" href="#aboutUsSection">
+                        <li class="nav-item pressEffect">
+                            <a class="nav-link nav-align gap-2" onclick="scrollToSection('aboutUsSection')">
                                 <img src="assets/media/images/aboutus.png" class="img-fluid icon"
                                     alt=""><span>Nosotros</span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-align gap-2" href="#formSection">
+                        <li class="nav-item pressEffect">
+                            <a class="nav-link nav-align gap-2" onclick="scrollToSection('formSection')">
                                 <img src="assets/media/images/consulta.png" class="img-fluid icon" alt=""><span>
                                     Consultar</span>
                             </a>
@@ -269,6 +269,8 @@
         </div>
     </footer>
 
+    <script src="assets/js/buttonAnimation.js" defer></script>
+    <script src="assets/js/scrollFunction.js" defer></script>
     <script src="assets/js/drop-down-menu.js" defer></script>
     <script src="assets/js/formStatus.js" defer></script>
     <script src="assets/js/IntersectionObserverpage.js" defer></script>
