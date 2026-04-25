@@ -13,6 +13,8 @@ toast.addEventListener("animationend", (e) => {
     }
 })
 
+console.log(form.action)
+
 //intercepción del formulario para llevar a cabo una acción
 
 form.addEventListener("submit", async e => {
